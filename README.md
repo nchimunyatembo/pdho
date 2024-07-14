@@ -1,4 +1,6 @@
-# pdho
-my app
-This site developed for the purpose of learning 
-<a href="signup.html">
+<!doctype html>
+<html>
+  <body>
+    <h>Building a site</h>
+  </body>
+</html>
