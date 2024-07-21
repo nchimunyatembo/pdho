@@ -1,6 +1,5 @@
-<!doctype html>
-<html style =background-color: purple;>
-  <body> <a href="">HOME</a><a href="">CONTACT US</a href=""><a>ABOUT US</a>
+
+  <body> <a href="">HOME</a>    <a href="">CONTACT US</a>    <a href="">ABOUT US</a>
     <br>
     <br>
     <h>ADH and ECD corner</h><br>
