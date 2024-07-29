@@ -255,7 +255,15 @@ img {
   background: #555;
   color: #f1f1f1;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
+.sticky + .content {
+  padding-top: 102px;
+}
 
 
 </style>
@@ -476,5 +484,19 @@ Tel: +260978602928|Email:nchimunyatembo09@gmail.com <br><br>
             <br><br>
             <br><br>
         </div>
+        <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
     </body>
 </html>
