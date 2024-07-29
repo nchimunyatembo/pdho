@@ -1,6 +1,6 @@
 
   <body> 
-   <div style="align-item: center"> <a href="page.tsx">HOME</a>    <a href="">CONTACT US</a>    <a href="">ABOUT US</a></div>
+   <div style="align-item: center"> <a href="replicate.html">HOME</a>    <a href="">CONTACT US</a>    <a href="">ABOUT US</a></div>
     <br>
 <br>
 
