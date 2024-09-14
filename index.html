@@ -12,9 +12,6 @@
     
 
             }
-            {
-              box-sizing: border-box;
-            }
             .container{
                 padding-left: 20%;
 
@@ -255,10 +252,12 @@ img {
 }
 
 .header {
+    display: inline;
   padding: 20%;
   background: pink;
   color: white;
-  height: 10%;
+  height: 2%;
+  text-decoration: none;
 }
 .sticky {
   position: fixed;
@@ -270,8 +269,8 @@ img {
   padding-top: 102px;
 }
 .nav{
-    margin-top: 0%;
-    margin: 0;
+    margin-top: 0px;
+    margin-left: 0px;
     padding: 0;
     width: 200px;
     background-color: #f1f1f1;
@@ -281,9 +280,13 @@ img {
 }
             .nav a{
                 display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
+                color: black;
+                padding: 16px;
+                text-decoration: none;
+                margin: 0px;
+                height: 100%;
+                width: 40Px;
+                background-color: white;
             }
 .nav a:hover{
     background-color: green;
@@ -293,7 +296,7 @@ img {
 
 </head>
     <body>
-        <nav <h1>HOME</h1> class="nav"><h1>ADOLESCENT LESSONS</h1>
+        <nav class="nav"> <h1>HOME</h1> class="nav"><h1>ADOLESCENT LESSONS</h1>
             <a href="ADH1.html">Lesson 1 </a>
               <a href="ADH2.html">Lesson 2</a>
             <h1>ECD LESSONS</h1>
@@ -308,51 +311,43 @@ img {
               <a href=""></a>
         </nav>
 
-<div class="container"><div class="header">
-   <div class="container">
-          <h3><a>ABOUT US</a> </h>   <a> CONTACT US </a> </h3>
-        <h2> <a href="">Sign Up</a><p>   </p><a href="Login form.html">Sign In</a> </h2>
+<div class="container">
+    <div class="header"> <h3><a>ABOUT US</a> </h><a> CONTACT US </a> </h3>
+        <h2> <a href="">Sign Up</a><a href="Login form.html">Sign In</a> </h2>
+    </div>
 
 <div class="container">
   <div class="mySlides">
     <div class="numbertext">1 / 6</div>
     <img src="ch2.jpg" style="width:100%">
   </div>
-
-  <div class="mySlides">
+<div class="mySlides">
     <div class="numbertext">2 / 6</div>
     <img src="cherry.png" style="width:100%">
   </div>
-
-  <div class="mySlides">
+<div class="mySlides">
     <div class="numbertext">3 / 6</div>
     <img width="1200px"height="800"src="img1.png">
   </div>
-    
-  <div class="mySlides">
+     <div class="mySlides">
     <div class="numbertext">4 / 6</div>
     <img src="nearcherry.png" style="width:100%">
   </div>
-
-  <div class="mySlides">
+ <div class="mySlides">
     <div class="numbertext">5 / 6</div>
     <img src="extra pic.png" style="width:100%">
   </div>
-    
-  <div class="mySlides">
+     <div class="mySlides">
     <div class="numbertext">6 / 6</div>
     <img src="ch2.jpg" style="width:100%">
   </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
   <a class="next" onclick="plusSlides(1)">❯</a>
-
-  <div class="caption-container">
+<div class="caption-container">
     <p id="caption"></p>
   </div>
-
-  
 </div>
+    
 
 <script>
 let slideIndex = 1;
@@ -385,7 +380,7 @@ function showSlides(n) {
 }
 </script>
             
-        </div>
+        
         <div class="row">
             <div class="column">
                 <h>WELCOME TO PETAUKE DISTRICT HEALTH OFFICE</h><br>
@@ -404,12 +399,13 @@ function showSlides(n) {
                                  <h>OUR SPECIALITY
                                    </h><br>
                                     <p> “Building A Solid Foundation For young people who are the adolescent As They Climb The Hills of Life.”</p><br>
-
-                </div>
-                <div class="column" margin="10px">
+       </div>
+        </div>
+                
+                  <div class="column" margin="10px">
                     <img src="nearcherry.png">hia</img>
                     </div>
-            </div>
+            
             <img src="cherry.png">cherry</img>
             <div class="row">
                 <div class="column">
@@ -422,8 +418,8 @@ function showSlides(n) {
                      </div>
                      <div class="column"><img style="border-radius: 100px" src="img1.png">another image</div>
                         </div>
-                </div>
-                <di class="row">
+            
+                <div class="row">
                     <div class="column">
                         <h style="color: red;">WHAT MAKES US STAND OUT</h><br>
                         <h1>EXTRA CURRICULUM ACTIVITIES</h1><br>
@@ -433,7 +429,8 @@ function showSlides(n) {
                         <div class="column">
                             <img src="img1.png"></img>
                             </div>
-                    </di>
+                    </div>
+                    
 
         <div class="row">
         <div class="column">
@@ -459,8 +456,9 @@ function showSlides(n) {
                                 attention and progress tracking.</p>
                             </div>
                             </div>
+                          </div>
 
-        </div>
+    
 <div style="background-image: url();">
     <br>
     <h1>SCHEDULE YOUR APPONTMENT WITH US</h1><br>
