@@ -1,500 +1,165 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>WELCOME TO PETAUKE DISTRICT HEALTH OFFICE WEBSITE</title>
-        <meta name="viewport"content="width=device-width,initial-scale=1">
-        <meta name="ECD Tutorials"content="ECD,ADH tutorials">
-        <meta lang="eng">
-        <style>
-            .body{
-                background-color: slategray;
-              margin-left: 0px;
-    
-
-            }
-            .container{
-                padding-left: 20%;
-
-            }
-            .column{
-                float: left;
-           width: 25%;
-           padding: 0 10px;
-
-            }
-            .row{
-                margin: 0 -5px;
-
-            }
-            .card{
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+<html lang="en">
+<head>
+    <title>WELCOME TO PETAUKE DISTRICT HEALTH OFFICE WEBSITE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ECD, ADH tutorials">
+    <style>
+        body {
+            background-color: slategray;
+            margin: 0;
+        }
+        .container {
+            padding-left: 20%;
+        }
+        .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+        }
+        .row {
+            margin: 0 -5px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             padding: 16px;
             text-align: center;
             background-color: #f1f1f1;
-
-            }
-            /*on hover links
-            top:hover{
-            background-color: red;
+        }
+        .btn {
+            background-color: #ddd;
+            border: none;
+            color: black;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #3e8e41;
             color: white;
-            }
-            /* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;}
-  .btn {
-  background-color: #ddd;
-  border: none;
-  color: black;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background-color: #3e8e41;
-  color: white;
-}
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
-img {
-  vertical-align: middle;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-            .top-container {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: inline;
-  padding: 20%;
-  background: pink;
-  color: white;
-  height: 2%;
-  text-decoration: none;
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
-}
-.nav{
-    margin-top: 0px;
-    margin-left: 0px;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-}
-            .nav a{
+        }
+        /* Responsive design */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
                 display: block;
-                color: black;
-                padding: 16px;
-                text-decoration: none;
-                margin: 0px;
-                height: 100%;
-                width: 40Px;
-                background-color: white;
+                margin-bottom: 20px;
             }
-.nav a:hover{
-    background-color: green;
-}
-            
-</style>
-
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px;
+            background: pink;
+            color: white;
+            text-align: center;
+        }
+        .nav {
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        .nav a {
+            display: block;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: green;
+            color: white;
+        }
+    </style>
 </head>
-    <body>
-        <nav class="nav"> <h1>HOME</h1> class="nav"><h1>ADOLESCENT LESSONS</h1>
-            <a href="ADH1.html">Lesson 1 </a>
-              <a href="ADH2.html">Lesson 2</a>
-            <h1>ECD LESSONS</h1>
-            <a href="page1.html"> Introduction</a>
-              <a href="page2.html">Group counselling</a>
-              <a href="page3.html">Individual counselling</a>
-              <a href=""></a>
-              <a href=""></a>
-              <a href=""></a>
-              <a href=""></a>
-              <a href=""></a>
-              <a href=""></a>
-        </nav>
+<body>
+    <nav class="nav">
+        <h1>HOME</h1>
+        <h1>ADOLESCENT LESSONS</h1>
+        <a href="ADH1.html">Lesson 1</a>
+        <a href="ADH2.html">Lesson 2</a>
+        <h1>ECD LESSONS</h1>
+        <a href="page1.html">Introduction</a>
+        <a href="page2.html">Group Counselling</a>
+        <a href="page3.html">Individual Counselling</a>
+    </nav>
 
-<div class="container">
-    <div class="header"> <h3><a href="Home.html">ABOUT US</a> </h><a href="contact us.html"> CONTACT US </a> </h3>
-        <h2> <a href="Signup.html">Sign Up</a><a href="Login form.html">Sign In</a> </h2>
+    <div class="header">
+        <h3>
+            <a href="Home.html">ABOUT US</a>
+            <a href="contact_us.html">CONTACT US</a>
+        </h3>
+        <h2>
+            <a href="Signup.html">Sign Up</a>
+            <a href="Login_form.html">Sign In</a>
+        </h2>
     </div>
 
-<div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="ch2.jpg" style="width:100%">
-  </div>
-<div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="cherry.png" style="width:100%">
-  </div>
-<div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img width="1200px"height="800"src="img1.png">
-  </div>
-     <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="nearcherry.png" style="width:100%">
-  </div>
- <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="extra pic.png" style="width:100%">
-  </div>
-     <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="ch2.jpg" style="width:100%">
-  </div>
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-<div class="caption-container">
-    <p id="caption"></p>
-  </div>
-</div>
-    
-
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-            
-        
+    <div class="container">
         <div class="row">
             <div class="column">
-                <h>WELCOME TO PETAUKE DISTRICT HEALTH OFFICE</h><br>
-                <img src="cherry.png">pic</img><br>
-                <h>All-Round Curriculum
-                     </h><br>
-                    <p>We provide a hands-on learning experience through a broad, balanced, flexible, integrated, sensitive curriculum for adolescents.</p><br>
-                    <h>Multicultural Environment
-                        We provide a hands-on learning experience through a broad, balanced, flexible, integrated, sensitive curriculum that makes adolesents kept busy at all times,this reduces them enganging into sexual activities.</h><br>
-                        <p>We provide a hands-on learning experience through a broad, balanced, flexible, integrated, sensitive curriculum</p><br>
-                        <h>Excellent Facilities
-                            </h><br>
-                            <p>The facilities are very well taken care of, with modern equipment and great amenities. They are both practical and 
-                                beautiful, which shows that the organization really cares about making sure people of adolescent age have a wonderful time and feel valued. Thank you
-                                 for listening.</p><br>
-                                 <h>OUR SPECIALITY
-                                   </h><br>
-                                    <p> “Building A Solid Foundation For young people who are the adolescent As They Climb The Hills of Life.”</p><br>
-       </div>
+                <h2>WELCOME TO PETAUKE DISTRICT HEALTH OFFICE</h2>
+                <img src="cherry.png" alt="Cherry Image" style="width:100%">
+                <p>We provide a hands-on learning experience through a broad, balanced, flexible, integrated, sensitive curriculum for adolescents.</p>
+            </div>
+            <div class="column">
+                <img src="nearcherry.png" alt="Another Image" style="width:100%;">
+            </div>
         </div>
-                
-                  <div class="column" margin="10px">
-                    <img src="nearcherry.png">hia</img>
-                    </div>
-            
-            <img src="cherry.png">cherry</img>
-            <div class="row">
-                <div class="column">
-                <h>HEADTEACHER</h><br>
-                <h1>HELLO !</h1><br>
-                <p>Thank you for visiting the official website of petauke district health office adolescent School. I hope you will take your time to 
-                    fully explore our site and discover why we are the number one choice of adolescent service provider for young children who completed their secondary and primary
-                     education from anywhere.</p><br>
-                     <button class="btn"style="background-color: red;">Read More</button>
-                     </div>
-                     <div class="column"><img style="border-radius: 100px" src="img1.png">another image</div>
-                        </div>
-            
-                <div class="row">
-                    <div class="column">
-                        <h style="color: red;">WHAT MAKES US STAND OUT</h><br>
-                        <h1>EXTRA CURRICULUM ACTIVITIES</h1><br>
-                        <p>Petauke district adolescent corner boasts of a well-rounded, holistic education that also encourages our learners to fulfil their
-                             potential outside the freindly corners where adolescent education is provided</p>
-                        </div>
-                        <div class="column">
-                            <img src="img1.png"></img>
-                            </div>
-                    </div>
-                    
 
         <div class="row">
-        <div class="column">
-            <div class="card">
-                <h1>ART</h1><br>
-                <p>Unlock your creativity in our vibrant art adolescent corner! Explore diverse mediums, 
-                    unleash imagination, and develop artistic skills. Experienced instructors,
-                    nurturing environment, and captivating projects.</p>
+            <div class="column">
+                <h2>HEADTEACHER</h2>
+                <p>Thank you for visiting the official website of Petauke District Health Office. We aim to provide quality services to adolescents.</p>
+                <button class="btn" style="background-color: red;">Read More</button>
+            </div>
+            <div class="column">
+                <img src="img1.png" alt="Image" style="border-radius: 100px; width:100%;">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <h2>ART</h2>
+                    <p>Unlock your creativity in our vibrant art adolescent corner! Explore diverse mediums, unleash imagination, and develop artistic skills.</p>
                 </div>
             </div>
             <div class="column">
-                <div class="card"><h1>SPORTS</h1><br>
-                    <p>Join the thrill of our dynamic sports program! Enhance skills, teamwork, and 
-                        sportsmanship. Expert coaches, diverse disciplines, and a winning spirit. This 
-                        allows students to discover their passions, unleash potential and forge lifelong 
-                        friendships.</p>
-                    </div>
-                    </div>
-                    <div class="column">
-                        <div class="card"> <h>SWIMMING</h><br>
-                            <p>Boost water confidence with personalized swimming classes! Qualified instructors,
-                                safety focus, stroke development. Our qualified instructors ensure personalized
-                                attention and progress tracking.</p>
-                            </div>
-                            </div>
-                          </div>
+                <div class="card">
+                    <h2>SPORTS</h2>
+                    <p>Join the thrill of our dynamic sports program! Enhance skills, teamwork, and sportsmanship with expert coaches and diverse disciplines.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h2>SWIMMING</h2>
+                    <p>Boost water confidence with personalized swimming classes! Our qualified instructors ensure personalized attention and progress tracking.</p>
+                </div>
+            </div>
+        </div>
 
-    
-<div style="background-image: url();">
-    <br>
-    <h1>SCHEDULE YOUR APPONTMENT WITH US</h1><br>
-    <button class="btn"style="background-color: red;">SCHEDULE APPOINTMENT</button>
-    </div>
-    </div>
-    <div style="background-color: lavender;"><h>best achievment<br><br>
-        <br><br><br>
-        <br><br><br><br><br></h></div>
-        <div style="background-color: blueviolet;text-align: center;">
+        <footer style="background-color: blueviolet; text-align: center; padding: 20px;">
             <address>
-
-                <br><br><br><br>  <p>Ukwimi Road<br>
-    Hails,petauke,Zambia<br>
-Tel: +260978602928|Email:nchimunyatembo09@gmail.com <br><br>
-@2024 created by <a href="">Nchimunya Tembo App Solution</a></p>
-            </address><br><br>
-            <br><br>
-            <br><br>
-        </div></div>
-        <script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
-    </body>
+                <p>Ukwimi Road<br>
+                    Hails, Petauke, Zambia<br>
+                    Tel: +260978602928 | Email: nchimunyatembo09@gmail.com<br>
+                    &copy; 2024 Created by <a href="#">Nchimunya Tembo App Solution</a>
+                </p>
+            </address>
+        </footer>
+    </div>
+</body>
 </html>
